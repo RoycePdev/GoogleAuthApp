@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './components/App'
-import reportWebVitals from './reportWebVitals'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import reducers from './reducers'
@@ -19,4 +18,6 @@ ReactDOM.render(
   document.getElementById('root')
 )
 
-// reportWebVitals()
+
+console.log('STRIPE KEY IS', process.env.REACT_APP_STRIPE_KEY)
+console.log('ENVIRONMENT IS', process.env.NODE_ENV)
